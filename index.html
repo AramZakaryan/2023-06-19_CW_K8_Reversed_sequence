@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023-06-19_CW_K8_Reversed_sequence</title>
+</head>
+
+<body>
+
+    <script>
+
+        // DESCRIPTION:
+
+        // Build a function that returns an array of integers from n to 1 where n > 0.
+
+        // Example: n = 5 - > [5,4,3,2,1]
+
+
+        // My version
+
+        const reverseSeq = n => Array(n).fill("").map((el, ind) => el = n - ind);
+
+
+        console.log(reverseSeq(5));
+
+
+        // Another version
+
+        const reverseSeq2 = num => Array.from({num}, () => num--)
+
+        console.log(reverseSeq2(5), "ver.2")
+
+
+    </script>
+
+</body>
+
+</html>
